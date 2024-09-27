@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0px 0 0 0px;
+    box-sizing: border-box;
+}
+
+main {
+    padding: 0 0 0 10px;
+    font-family: Arial;
+}
+
+h1 {
+    margin: 0;
+    padding: 5px 0 5px 0;
+}
+
+p{
+    font-size: 16px;
+    padding: 2px;
+}
+
+span {
+    font-size: 16px;
+}
+
+input {
+    font-size: 14px;
+}
+
+option {
+    font-size: 14px;
+}
+
+.tabla {
+    border: 1px solid black;
+    border-spacing: 4px;
+    margin: 10px 0 10px 0;
+}
+
+td {
+    padding: 3px;
+    border: 1px solid black;
+}
+
+.sectionGenero {
+    margin: 10px 0 10px 0;
+}
+
+.sectionLenguaje {
+    margin: 10px 0 10px 0;
+}
+
+.idiomasComentarios {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.sectionComentarios {
+    padding-left: 20px;
+}
+
+.resetButton {
+    width: 80px;
+    height: 25px;
+}
+.resetButton:hover {
+    cursor: pointer;
+}
+
+.submitButton{
+    width: 80px;
+    height: 25px;
+}
+.submitButton:hover{
+    cursor: pointer;
+}
