@@ -34,17 +34,6 @@ public class Sueldo {
         }
 
         //Según las horas trabajadas se hace el cálculo
-        /*if (this.diaryHoursWorked <= 8){
-            weeklySalary = calculator();
-        } else if (this.diaryHoursWorked > 8 && this.diaryHoursWorked <= 12) {
-            this.salaryPerHour *= 2;
-            weeklySalary = calculator();
-        }else if (this.diaryHoursWorked > 12){
-            this.salaryPerHour *= 3;
-            weeklySalary = calculator();
-        }*/
-
-        //Según las horas trabajadas se hace el cálculo
         if (this.diaryHoursWorked <= 8){
             weeklySalary = calculator();
         } else if (this.diaryHoursWorked > 8 && this.diaryHoursWorked <= 12) {
