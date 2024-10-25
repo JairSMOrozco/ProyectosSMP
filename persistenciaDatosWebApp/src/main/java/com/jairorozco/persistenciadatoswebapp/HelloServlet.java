@@ -1,7 +1,6 @@
-package org.jairsanmartin.persistenciasimplewebapp;
+package com.jairorozco.persistenciadatoswebapp;
 
 import java.io.*;
-
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
