@@ -15,9 +15,9 @@ public class EscribeArchivo {
             escribeArch = new FileWriter(archivo, true);
             imprimeArch = new PrintWriter(escribeArch);
             imprimeArch.println(emp.getNombre() + "," + emp.getApellidos() + "," + emp.getId());
-        } catch (Exception e){
+        } catch (Exception e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             try{
                 if(imprimeArch != null){
                     imprimeArch.close();

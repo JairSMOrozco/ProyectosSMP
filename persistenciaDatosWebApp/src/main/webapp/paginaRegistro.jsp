@@ -21,18 +21,26 @@
     String apellidos = request.getParameter("apellido");
     String idEmpleado = request.getParameter("id");
 
-    Empleado nuevoEmpleado = new Empleado(nombres, apellidos,
-            Integer.parseInt(idEmpleado));
+    //Creo mi objeto empleado y se inicializa con los calores pasados por el formulario
+    Empleado nuevoEmpleado = new Empleado(nombres, apellidos, Integer.parseInt(idEmpleado));
+
+    //Uso de servletContext para sacar la ruta absoluta del archivo de persistencia
     ServletContext sc = this.getServletContext();
     String path = sc.getRealPath("/WEB-INF/registros.txt");
 
-    if(path==null)
-        path=sc.getRealPath("/");
+    if(path == null)
+        path = sc.getRealPath("/");
 
+    //Haciendo compatible el formato de la ruta sistemas Windows
     path = path.replace("\\", "\\\\");
-    System.out.println("paginaRegistro.jsp: "+path);
+
+    System.out.println("paginaRegistro.jsp: " + path);
+
     // Guardar en archivo
+    //Como el método es estático se puedo solo llamar a la clase seguido del método
+    //no es necesario crear una instancia de EscribeArchivo
     EscribeArchivo.add(nuevoEmpleado, path);
+
 %>
 <h2>Tu registro se hizo con éxito</h2>
 
