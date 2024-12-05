@@ -23,7 +23,7 @@
   </tr>
   <tr>
     <td>
-      <img src="assets/formulaEcuacion.PNG" >
+      <img src="assets/formulaEcuacion.PNG" width="200px" heigth="200px" >
     </td>
   </tr>
 </table>
